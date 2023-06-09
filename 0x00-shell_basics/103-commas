@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -Ap1 | paste -sd ','
+ls -Ap1 | sort -k1.2,1d -t / | tr '\n' ',' | sed 's/,$/\n/'
+

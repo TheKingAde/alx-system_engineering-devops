@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -Ap1 | paste -sd ','
-

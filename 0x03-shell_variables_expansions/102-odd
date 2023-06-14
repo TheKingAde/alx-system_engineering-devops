@@ -1,0 +1,2 @@
+#!/bin/bash
+cat -n "$1" | grep -E '^[[:blank:]]*[0-9]+[02468]+[[:blank:]]'

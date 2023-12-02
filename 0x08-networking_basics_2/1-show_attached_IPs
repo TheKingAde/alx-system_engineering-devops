@@ -1,0 +1,5 @@
+#!/bin/bash
+# displays all active IPv4 IPs on the machine it’s executed on.
+
+# Get all IP addresses
+ip -4 addr | grep -oP '(?<=inet\s)\d+(\.\d+){3}'

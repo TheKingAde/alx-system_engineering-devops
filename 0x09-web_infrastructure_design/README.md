@@ -4,3 +4,7 @@ This was a week-long project in which we began to research web infrastructure de
 
 This dir contains solution files for the alx web infrastructure design project
 
+## Authors :black_nib:
+* **Lennon N Paul** <[Ngadi-Git](https://github.com/Ngadi-Git)>
+* **Meffun Ade** <[TheKingAde](https://github.com/TheKingAde)>
+

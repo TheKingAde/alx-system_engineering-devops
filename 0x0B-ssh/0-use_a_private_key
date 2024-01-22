@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Permission to connect to my server using the private key with user ubuntu
+
+ssh -i ~/.ssh/school ubuntu@172.17.0.25

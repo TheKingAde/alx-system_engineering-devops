@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Configures Nginx with a 301 redirect from /redirect_me to another page
+
+# Install Nginx
+sudo apt-get update -y
+sudo apt-get install nginx -y
+
+# Create a new Nginx server block with the configuration for the redirect
+echo "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root /var/www/html;
+    index index.html;
+
+    server_name _;
+
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+    }
+}" | sudo tee /etc/nginx/sites-available/default
+
+# Restart Nginx to make the new configuration take effect
+sudo service nginx restart

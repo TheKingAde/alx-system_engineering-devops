@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script installs nginx if not installed and ensures it runs on port 80
-apt-get -y update
-apt-get -y install nginx
-service nginx start
+sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+sudo service nginx restart
+echo "" | sudo dd status=none of=/run/nginx.pid

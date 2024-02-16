@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#debug container so that Nginx is running as the nginx user.
+sed -i 's/user .*/user nginx;/' /etc/nginx/nginx.conf
+sed -i 's/listen .*/listen 8080;/' /etc/nginx/nginx.conf
+service nginx restart
